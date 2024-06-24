@@ -11,6 +11,14 @@
 		AD2754592C29316E00A99CF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754582C29316E00A99CF7 /* ContentView.swift */; };
 		AD27545B2C29317100A99CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD27545A2C29317100A99CF7 /* Assets.xcassets */; };
 		AD27545E2C29317100A99CF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD27545D2C29317100A99CF7 /* Preview Assets.xcassets */; };
+		AD2754652C29319E00A99CF7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754642C29319E00A99CF7 /* HomeView.swift */; };
+		AD2754672C2931B700A99CF7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754662C2931B700A99CF7 /* SettingsView.swift */; };
+		AD2754692C29320900A99CF7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754682C29320900A99CF7 /* LoginView.swift */; };
+		AD27546B2C2933EA00A99CF7 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27546A2C2933EA00A99CF7 /* LoginViewModel.swift */; };
+		AD27546F2C29493D00A99CF7 /* EmailCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD27546E2C29493D00A99CF7 /* EmailCodeView.swift */; };
+		AD2754722C294AC300A99CF7 /* EmailCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754712C294AC300A99CF7 /* EmailCodeViewModel.swift */; };
+		AD2754742C294B8A00A99CF7 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754732C294B8A00A99CF7 /* ResetPasswordView.swift */; };
+		AD2754772C294BAA00A99CF7 /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2754762C294BAA00A99CF7 /* ResetPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		AD2754582C29316E00A99CF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AD27545A2C29317100A99CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD27545D2C29317100A99CF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AD2754642C29319E00A99CF7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AD2754662C2931B700A99CF7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AD2754682C29320900A99CF7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AD27546A2C2933EA00A99CF7 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AD27546E2C29493D00A99CF7 /* EmailCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCodeView.swift; sourceTree = "<group>"; };
+		AD2754712C294AC300A99CF7 /* EmailCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCodeViewModel.swift; sourceTree = "<group>"; };
+		AD2754732C294B8A00A99CF7 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		AD2754762C294BAA00A99CF7 /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,9 @@
 				AD2754582C29316E00A99CF7 /* ContentView.swift */,
 				AD27545A2C29317100A99CF7 /* Assets.xcassets */,
 				AD27545C2C29317100A99CF7 /* Preview Content */,
+				AD2754642C29319E00A99CF7 /* HomeView.swift */,
+				AD27546C2C2934CF00A99CF7 /* Login */,
+				AD27546D2C2934D300A99CF7 /* Settings */,
 			);
 			path = NavigatorAndViewModel;
 			sourceTree = "<group>";
@@ -65,6 +84,43 @@
 				AD27545D2C29317100A99CF7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AD27546C2C2934CF00A99CF7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AD2754682C29320900A99CF7 /* LoginView.swift */,
+				AD27546A2C2933EA00A99CF7 /* LoginViewModel.swift */,
+				AD2754702C294AB800A99CF7 /* EmailCode */,
+				AD2754752C294B9600A99CF7 /* Reset */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AD27546D2C2934D300A99CF7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AD2754662C2931B700A99CF7 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AD2754702C294AB800A99CF7 /* EmailCode */ = {
+			isa = PBXGroup;
+			children = (
+				AD27546E2C29493D00A99CF7 /* EmailCodeView.swift */,
+				AD2754712C294AC300A99CF7 /* EmailCodeViewModel.swift */,
+			);
+			path = EmailCode;
+			sourceTree = "<group>";
+		};
+		AD2754752C294B9600A99CF7 /* Reset */ = {
+			isa = PBXGroup;
+			children = (
+				AD2754732C294B8A00A99CF7 /* ResetPasswordView.swift */,
+				AD2754762C294BAA00A99CF7 /* ResetPasswordViewModel.swift */,
+			);
+			path = Reset;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD27546F2C29493D00A99CF7 /* EmailCodeView.swift in Sources */,
+				AD2754652C29319E00A99CF7 /* HomeView.swift in Sources */,
+				AD2754722C294AC300A99CF7 /* EmailCodeViewModel.swift in Sources */,
+				AD2754742C294B8A00A99CF7 /* ResetPasswordView.swift in Sources */,
+				AD2754672C2931B700A99CF7 /* SettingsView.swift in Sources */,
+				AD2754772C294BAA00A99CF7 /* ResetPasswordViewModel.swift in Sources */,
+				AD27546B2C2933EA00A99CF7 /* LoginViewModel.swift in Sources */,
 				AD2754592C29316E00A99CF7 /* ContentView.swift in Sources */,
+				AD2754692C29320900A99CF7 /* LoginView.swift in Sources */,
 				AD2754572C29316E00A99CF7 /* NavigatorAndViewModelApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
