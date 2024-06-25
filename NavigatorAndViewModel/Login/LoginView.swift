@@ -52,7 +52,7 @@ struct LoginView<Model>: View where Model: LoginViewModelProtocol {
             }
         }
         .navigationDestination(isPresented: $viewModel.isLoginCompleted) {
-            EmailCodeView(viewModel: EmailCodeViewModel(), path: $path)
+            EmailCodeView(viewModel: EmailCodeViewModel(email: viewModel.email), path: $path)
         }
     }
 }

@@ -20,7 +20,10 @@ struct EmailCodeView<Model>: View where Model: EmailCodeViewModelProtocol {
     
     var body: some View {
         ScrollView {
-            VStack {
+            VStack(alignment: .leading) {
+                Text("Email: \(viewModel.email)")
+                    .bold()
+                    .padding(.horizontal)
                 TextField("Email Code", text: $viewModel.emailCode)
                     .padding()
                     .border(.gray)
@@ -44,5 +47,5 @@ struct EmailCodeView<Model>: View where Model: EmailCodeViewModelProtocol {
 }
 
 #Preview {
-    EmailCodeView(viewModel: EmailCodeViewModel(), path: .constant(NavigationPath()))
+    EmailCodeView(viewModel: EmailCodeViewModel(email: ""), path: .constant(NavigationPath()))
 }
